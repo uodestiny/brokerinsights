@@ -1,0 +1,75 @@
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.row {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+    
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 100px;
+        
+        @media all and (max-width: 850px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .innerWrap {
+            float: left;
+            width: 100%;
+            background: #fff;
+            padding: 50px 30px;
+            border-bottom: 5px solid #e74c3c;
+            box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        }
+    }
+}
+
+.policyData {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    
+    th {
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    td {
+        padding: 10px;
+    }
+    
+    tr:nth-child(odd) {
+        background: #eee;
+    }
+}
